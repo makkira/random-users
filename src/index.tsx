@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RelayEnvironmentProvider } from 'react-relay/hooks';
+import { relayEnvironment } from './relay/RelayEnvironments';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <RelayEnvironmentProvider environment={relayEnvironment}>
+      <App />
+    </RelayEnvironmentProvider>
   </React.StrictMode>
 );
 
