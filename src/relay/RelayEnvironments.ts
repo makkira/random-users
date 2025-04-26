@@ -1,6 +1,16 @@
-import { Environment, Network, RecordSource, Store } from "relay-runtime";
+import {
+  Environment,
+  Network,
+  RecordSource,
+  RequestParameters,
+  Store,
+  Variables,
+} from "relay-runtime";
 
-async function fetchGraphQL(text: string, variables: any) {
+async function fetchGraphQL(
+  operation: RequestParameters,
+  variables: Variables
+) {
   const response = await fetch(
     "https://nextjs-randomuser-graphql.vercel.app/api/graphql",
     {
@@ -9,7 +19,7 @@ async function fetchGraphQL(text: string, variables: any) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        query: text,
+        query: operation.text,
         variables,
       }),
     }
@@ -17,7 +27,11 @@ async function fetchGraphQL(text: string, variables: any) {
   return await response.json();
 }
 
-export const relayEnvironment = new Environment({
-  network: Network.create(fetchGraphQL),
-  store: new StorageEvent(new RecordSource()),
+const network = Network.create(fetchGraphQL);
+const store = new Store(new RecordSource());
+
+const relayEnvironment = new Environment({
+  network,
+  store,
 });
+export default relayEnvironment;

@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RelayEnvironmentProvider } from 'react-relay/hooks';
-import { relayEnvironment } from './relay/RelayEnvironments';
+import relayEnvironment from './relay/RelayEnvironments';
 
 
 const root = ReactDOM.createRoot(
