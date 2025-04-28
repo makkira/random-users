@@ -1,5 +1,5 @@
 /**
- * @generated SignedSource<<0a7a167f3f76da8ebcd0e8a810730ca9>>
+ * @generated SignedSource<<19a6e4fb038bfd9b452cc3e7a23c304e>>
  * @lightSyntaxTransform
  * @nogrep
  */
@@ -26,6 +26,7 @@ export type UsersQuery$data = {
     readonly name: {
       readonly last: string | null | undefined;
     } | null | undefined;
+    readonly nat: string | null | undefined;
   } | null | undefined> | null | undefined;
 };
 export type UsersQuery = {
@@ -124,6 +125,13 @@ v2 = [
           }
         ],
         "storageKey": null
+      },
+      {
+        "alias": null,
+        "args": null,
+        "kind": "ScalarField",
+        "name": "nat",
+        "storageKey": null
       }
     ],
     "storageKey": null
@@ -153,16 +161,16 @@ return {
     "selections": (v2/*: any*/)
   },
   "params": {
-    "cacheID": "02650dff3813d12728ced1f0a56a318f",
+    "cacheID": "990926e9f1fbe9cb126c7e3589209d8c",
     "id": null,
     "metadata": {},
     "name": "UsersQuery",
     "operationKind": "query",
-    "text": "query UsersQuery(\n  $results: Int!\n  $nat: String!\n) {\n  users(results: $results, nat: $nat) {\n    gender\n    name {\n      last\n    }\n    dob {\n      age\n    }\n    location {\n      state\n    }\n  }\n}\n"
+    "text": "query UsersQuery(\n  $results: Int!\n  $nat: String!\n) {\n  users(results: $results, nat: $nat) {\n    gender\n    name {\n      last\n    }\n    dob {\n      age\n    }\n    location {\n      state\n    }\n    nat\n  }\n}\n"
   }
 };
 })();
 
-(node as any).hash = "62422bf1e16b82eb6c79ea6d3c66b3e1";
+(node as any).hash = "50aa9e7e9b8a385af0c773f9a86442fe";
 
 export default node;

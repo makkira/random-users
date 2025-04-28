@@ -13,6 +13,7 @@ export const UsersQuery = graphql`
       location {
         state
       }
+      nat
     }
   }
 `;
