@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import UserStats from './UserStats';
+import UserInput from './Components/UserInput';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <UserStats />
+        <UserInput />
       </header>
     </div>
   );
