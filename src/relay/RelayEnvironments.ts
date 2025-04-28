@@ -18,6 +18,7 @@ function generateMockUsers(
   nat: string;
 }> {
   const states = ["CA", "NY", "TX", "FL", "IL", "PA", "OH", "GA", "NC", "MI"];
+
   const ageBuckets: Array<[number, number]> = [
     [0, 20],
     [21, 40],
