@@ -11,11 +11,11 @@ To run it locally, run `npm start`. This will open up a page http://localhost:30
 
 ## File Structure
 
-src/
-├── components/ # UI: UserInput, UserStats…
-├── queries/ # Relay GraphQL definitions
-├── relay/ # Environment & network setup
-└── styles/ # Global & module CSS
+src/  
+├── components/ # UI: UserInput, UserStats…  
+├── queries/ # Relay GraphQL definitions  
+├── relay/ # Environment & network setup  
+└── styles/ # Global & module CSS  
 
 ## Need to do
 
