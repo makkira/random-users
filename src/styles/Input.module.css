@@ -1,0 +1,13 @@
+.row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 5px 0;
+  }
+  
+  .label {
+    width: 250px;
+    text-align: left;
+    font-weight: 500;
+  }
+  

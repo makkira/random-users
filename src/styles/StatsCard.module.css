@@ -1,0 +1,15 @@
+.card {
+    /* flex: 1 1 200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading {
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+  }
+  .body p {
+    margin: 0.25rem 0;
+    font-size: 1.25rem;
+  }
+  
