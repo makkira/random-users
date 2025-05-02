@@ -31,7 +31,7 @@ export default function GenericPie({
     innerRadius = 40,
     outerRadius = 80,
     width = '100%',
-    height = 200,
+    height = 230,
     legendLayout = 'horizontal',
     legendAlign = 'center',
     legendVerticalAlign = 'bottom',
@@ -41,7 +41,7 @@ export default function GenericPie({
 
     return (
         <ResponsiveContainer width={width} height={height}>
-            <PieChart margin={{ top: 80 }} >
+            <PieChart margin={{ top: 70 }} >
                 <Pie
                     data={data}
                     dataKey="value"
