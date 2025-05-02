@@ -23,6 +23,7 @@ src/
 - Create tests for each component
 - Make data into "cards" where users can choose whether or not they want visualizations and which visualizations
 - Allow additional filtering
+- Fixing charts so they line up and don't adjust when data changes
 - Allow users to add/remove what data they want seen with "checkbox" like system
 
 ## Issues
