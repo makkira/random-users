@@ -21,7 +21,7 @@ src/
 ## Future Additions
 
 - Create tests for each component
-- Make data into "cards" where users can choose whether or not they want visualizations
+- Make data into "cards" where users can choose whether or not they want visualizations and which visualizations
 - Allow additional filtering
 - Allow users to add/remove what data they want seen with "checkbox" like system
 
