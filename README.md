@@ -12,23 +12,15 @@ To run it locally, run `npm start`. This will open up a page http://localhost:30
 ## File Structure
 
 src/  
-├── components/ # UI: UserInput, UserStats…  
+├── components/ # UI: UserInputSection, UserStats…  
+├── hooks/ # Custom hook, useUserStats  
 ├── queries/ # Relay GraphQL definitions  
 ├── relay/ # Environment & network setup  
 └── styles/ # Global & module CSS
 
-## Need to do
-
-- Move inline styles to css
-- Change default react css
-- Change logo in tab
-- Write tests
-- Add visualization
-- Style page
-- Organize files
-
-## Issues so Far
+## Issues
 
 - `https://nextjs-randomuser-graphql.vercel.app/api/graphql` is down, spent time trying to find a way around. // Using provided fix.
 - Installing relay gave issues since I am using latest React. Force installed it and hoping no issues. If issues pop up, will downgrade react version // downgraded react
 - Mocked the data for nextjs and basic functionality is working now. just gotta add tests and what not. // app works now with mocked data, adjusting to use provided fix.
+- Issues with using the provided fix with Docker // fixed
