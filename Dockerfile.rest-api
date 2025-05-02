@@ -1,0 +1,11 @@
+FROM node:9
+ARG MONGO_HOST
+WORKDIR /App
+RUN git clone https://github.com/RandomAPI/Randomuser.me-Node.git .
+RUN npm install
+RUN sed -i s/localhost/${MONGO_HOST}/ models/db.js
+
+RUN npm run build
+
+EXPOSE 3000
+CMD npm start

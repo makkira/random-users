@@ -1,0 +1,25 @@
+services:
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+
+  rest-api:
+    image: random-user-rest
+    build:
+        dockerfile: Dockerfile.rest-api
+        context: .
+        args: 
+          MONGO_HOST: "mongo"
+    ports:
+        - "3210:3000"
+
+  graphql-api:
+    image: random-user-graphql
+    build:
+        dockerfile: Dockerfile.graphql-api
+        context: .
+        args:
+          RANDOM_USER_HOST: "http://rest-api:3000"
+    ports:
+        - "3211:3000"

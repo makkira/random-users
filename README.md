@@ -15,7 +15,7 @@ src/
 ├── components/ # UI: UserInput, UserStats…  
 ├── queries/ # Relay GraphQL definitions  
 ├── relay/ # Environment & network setup  
-└── styles/ # Global & module CSS  
+└── styles/ # Global & module CSS
 
 ## Need to do
 
@@ -29,6 +29,6 @@ src/
 
 ## Issues so Far
 
-- `https://nextjs-randomuser-graphql.vercel.app/api/graphql` is down, spent time trying to find a way around
-- Installing relay gave issues since I am using latest React. Force installed it and hoping no issues. If issues pop up, will downgrade react version
-- Mocked the data for nextjs and basic functionality is working now. just gotta add tests and what not.
+- `https://nextjs-randomuser-graphql.vercel.app/api/graphql` is down, spent time trying to find a way around. // Using provided fix.
+- Installing relay gave issues since I am using latest React. Force installed it and hoping no issues. If issues pop up, will downgrade react version // downgraded react
+- Mocked the data for nextjs and basic functionality is working now. just gotta add tests and what not. // app works now with mocked data, adjusting to use provided fix.
