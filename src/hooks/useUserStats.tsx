@@ -8,7 +8,6 @@ interface UseUserStatsArgs {
 
 export default function useUserStats({ users, total }: UseUserStatsArgs) {
     return useMemo(() => {
-        console.log('useUserStats', { users, total });
 
         if (total < 1 || !users?.length) {
             return {
