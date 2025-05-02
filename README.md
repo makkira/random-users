@@ -18,6 +18,13 @@ src/
 ├── relay/ # Environment & network setup  
 └── styles/ # Global & module CSS
 
+## Future Additions
+
+- Create tests for each component
+- Make data into "cards" where users can choose whether or not they want visualizations
+- Allow additional filtering
+- Allow users to add/remove what data they want seen with "checkbox" like system
+
 ## Issues
 
 - `https://nextjs-randomuser-graphql.vercel.app/api/graphql` is down, spent time trying to find a way around. // Using provided fix.
